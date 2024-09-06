@@ -5,11 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1 id="page-title">Library</h1>
-    <button>Add book</button>
+    <div class="add-book"><button>+ Add book</button></div>
+    <div class="dialog-container">
+        <dialog disableRestoreFocus class="book-info-dialog">
+            <form>
+                <div class="card">
+                    <h1>New Book</h1>
+                    <span class="fixed">Name:</span>
+                    <input type="text" name="name" id="name" maxlength="30" autofocus>
+                    <span class="fixed">Author:</span>
+                    <input type="text" name="author" id="author" maxlength="20">
+                    <span class="fixed">Pages:</span>
+                    <input type="number" name="pages" id="pages">
+                    <button type="submit">Add</button>
+                    <button type="submit">Close</button>
+                </div>
+            </form>
+        </dialog>
+    </div>
     <div class="container">
+        <div class="card">
+            <p><span class="fixed">Name:</span> 68mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+            <p><span class="fixed">Author:</span>34Hcverma</p>
+            <p><span class="fixed">Pages:</span> 399</p>
+            <p><span class="fixed">Status:</span> Not read</p>
+            <button>Read</button>
+            <button>Remove</button>
+        </div>
+        <div class="card">
+            Name: Physics
+            Author: Hcverma
+            Pages: 399
+            Read: No
+        </div>
         <div class="card">
             Name: Physics
             Author: Hcverma
