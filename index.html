@@ -18,38 +18,19 @@
                 <div class="card">
                     <h1>New Book</h1>
                     <span class="fixed">Name:</span>
-                    <input type="text" name="name" id="name" maxlength="30" autofocus>
+                    <input type="text" name="name" id="name" maxlength="30" autofocus autocomplete="title">
                     <span class="fixed">Author:</span>
                     <input type="text" name="author" id="author" maxlength="20">
                     <span class="fixed">Pages:</span>
                     <input type="number" name="pages" id="pages">
-                    <button type="submit">Add</button>
-                    <button type="submit">Close</button>
+                    <button type="submit" id="add-book">Add</button>
+                    <button type="submit" id="close-dialog">Close</button>
                 </div>
             </form>
         </dialog>
     </div>
     <div class="container">
-        <div class="card">
-            <p><span class="fixed">Name:</span> 68mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
-            <p><span class="fixed">Author:</span>34Hcverma</p>
-            <p><span class="fixed">Pages:</span> 399</p>
-            <p><span class="fixed">Status:</span> Not read</p>
-            <button>Read</button>
-            <button>Remove</button>
-        </div>
-        <div class="card">
-            Name: Physics
-            Author: Hcverma
-            Pages: 399
-            Read: No
-        </div>
-        <div class="card">
-            Name: Physics
-            Author: Hcverma
-            Pages: 399
-            Read: No
-        </div>
+        
     </div>
     <script src="script.js"></script>
 </body>
