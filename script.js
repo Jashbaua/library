@@ -1,12 +1,14 @@
 const myLibrary=[]
-function Book(name,author,pages){
-    this.name=name
-    this.author=author
-    this.pages=pages
-    this.isread=false
-    this.info=function(){
-        let read=this.isRead?'finished reading':'not read yet'
-        return `${this.name} by ${this.author}, ${this.pages} pages, ${read}`
+class Book{
+    constructor (name,author,pages){
+        this.name=name
+        this.author=author
+        this.pages=pages
+        this.isread=false
+        this.info=function(){
+            let read=this.isRead?'finished reading':'not read yet'
+            return `${this.name} by ${this.author}, ${this.pages} pages, ${read}`
+        }
     }
 }
 function addBookToLibrary(name,author,pages){
